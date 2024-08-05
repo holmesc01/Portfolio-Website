@@ -1,0 +1,56 @@
+/* Apply Baskerville font to the entire site */
+body {
+    font-family: 'Baskerville', serif;
+    background-color: #31473A; /* Background color */
+    color: #EDF4F2; /* Text color */
+}
+
+/* Adjust size of the hamburger icon */
+.navbar-toggler {
+    font-size: 1.1rem; /* Adjust the font size of the icon */
+    padding: .10rem .10rem; /* Adjust padding for button size */
+    border: none; /* Remove any border */
+    background: transparent; /* Ensure background is transparent */
+    box-shadow: none; /* Remove any shadow effect */
+}
+
+/* Remove default focus and active state styles */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none; /* Remove the outline */
+    box-shadow: none; /* Remove any box shadow */
+}
+
+/* Style the default Bootstrap hamburger icon */
+.navbar-toggler-icon {
+    width: 1.5rem; /* Adjust width */
+    height: 1.5rem; /* Adjust height */
+    background-size: 1.3rem 1.3rem; /* Ensure background image fits */
+}
+
+/* Additional custom styles */
+.container, .navbar {
+    color: #EDF4F2; /* Text color */
+}
+
+.navbar {
+    background-color: #31473A; /* Navbar background color */
+}
+
+.nav-link {
+    color: #EDF4F2 !important; /* Navbar link color */
+}
+
+.navbar-brand {
+    color: #EDF4F2 !important; /* Navbar brand color */
+}
+
+/* Custom logo styling */
+.navbar-logo {
+    max-height: 55px;
+    height: auto;
+    width: auto;
+    padding-right: 10px;
+}
+
+  

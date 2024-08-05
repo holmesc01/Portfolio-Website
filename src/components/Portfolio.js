@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'; // Import useEffect from React
-import './Projects.css'; // Import custom styles
+import './Portfolio.css'; // Import custom styles
 
 const projects = [
-  { id: 1, title: "Project 1", description: "Description of Project 1" },
-  { id: 2, title: "Project 2", description: "Description of Project 2" },
-  { id: 3, title: "Project 3", description: "Description of Project 3" },
+  { id: 1, title: "Patagonia Customer Sentiment Analysis", description: "Description of Project 1" },
+  { id: 2, title: "Portfolio Website", description: "Description of Project 2" },
+  { id: 3, title: "Heat Pump Dryer", description: "Description of Project 3" },
   // Add more projects here
 ];
 

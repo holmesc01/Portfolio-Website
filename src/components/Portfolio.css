@@ -1,0 +1,25 @@
+.projects-container {
+  padding: 20px;
+}
+
+.project-card {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #31473A; /* Updated background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 0.6s ease, transform 0.6s ease, background-color 0.3s ease; /* Added background-color transition */
+  color: #EDF4F2; /* Text color */
+}
+
+.project-card.in-view {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Slide up */
+}
+
+.project-card:hover {
+  background-color: #EDF4F2;
+  color: #31473A /* Hover background color */
+}

@@ -1,11 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './components/Home';
-import Projects from './components/Projects';
+import Projects from './components/Portfolio';
 import Contact from './components/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'aos/dist/aos.css'; // AOS styles
 import AOS from 'aos';
+import './custom.css';
+import logo from './assets/logo.png'; // Adjust the path as necessary
 
 AOS.init();
 
@@ -13,11 +15,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a className="navbar-brand" href="/" style={{ marginLeft: '20px' }}>Chris Holmes</a>
+        <nav className="navbar navbar-expand-lg navbar-dark custom-navbar">
+          <a className="navbar-brand" href="/" style={{ marginLeft: '20px' }}>
+            <img src={logo} alt="Logo" className="navbar-logo" />
+          </a>
           <button 
             className="navbar-toggler" 
-            type="button" 
+            type="button"
+            style={{ marginRight: '20px' }} 
             data-bs-toggle="collapse" 
             data-bs-target="#navbarNav" 
             aria-controls="navbarNav" 
@@ -29,13 +34,13 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/" style={{ marginLeft: '20px' }}>Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/projects">Projects</Link>
+                <Link className="nav-link" to="/projects" style={{ marginLeft: '20px' }}>Projects</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">Contact</Link>
+              <li className="nav-item"> 
+                <Link className="nav-link" to="/contact" style={{ marginLeft: '20px' }}>Contact</Link>
               </li>
             </ul>
           </div>
@@ -51,3 +56,6 @@ function App() {
 }
 
 export default App;
+
+
+
