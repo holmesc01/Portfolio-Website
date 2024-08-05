@@ -1,5 +1,9 @@
-import React, { useEffect } from 'react'; // Import useEffect from React
-import './Portfolio.css'; // Import custom styles
+import React, { useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import './Portfolio.css';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   { id: 1, title: "Patagonia Customer Sentiment Analysis", description: "Description of Project 1" },
@@ -10,21 +14,22 @@ const projects = [
 
 const Projects = () => {
   useEffect(() => {
-    const handleScroll = () => {
-      const cards = document.querySelectorAll('.project-card');
-      cards.forEach(card => {
-        const cardTop = card.getBoundingClientRect().top;
-        const viewportHeight = window.innerHeight;
-        if (cardTop < viewportHeight - 100) {
-          card.classList.add('in-view');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check on load
-
-    return () => window.removeEventListener('scroll', handleScroll);
+    gsap.fromTo(
+      '.project-card',
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: '.projects-container',
+          start: 'top 80%',
+          end: 'bottom 20%',
+          scrub: true,
+        },
+      }
+    );
   }, []);
 
   return (
@@ -40,3 +45,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

@@ -21,5 +21,6 @@
 
 .project-card:hover {
   background-color: #EDF4F2;
-  color: #31473A /* Hover background color */
+  color: #31473A; /* Hover background color */
 }
+
