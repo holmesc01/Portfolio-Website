@@ -4,14 +4,26 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'aos/dist/aos.css'; // AOS styles
+import AOS from 'aos';
+
+AOS.init();
 
 function App() {
   return (
     <Router>
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a className="navbar-brand" href="/">Chris Holmes</a>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <a className="navbar-brand" href="/" style={{ marginLeft: '20px' }}>Chris Holmes</a>
+          <button 
+            className="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+          >
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
