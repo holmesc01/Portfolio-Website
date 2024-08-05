@@ -2,12 +2,20 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is the home page.</p>
-      <p>The aim of this website is to display the projects and experiences which I have been involved in.</p>
+    <div className="container text-center my-5">
+      <h1 className="display-3 font-weight-bold text-primary mb-4">
+        Welcome to <span className="text-secondary">My Portfolio</span>
+      </h1>
+      <p className="lead text-muted mb-5">
+        This is a simple portfolio website using Bootstrap. Explore my projects, skills, and more.
+      </p>
+      <a href="projects" className="btn btn-primary btn-lg">
+        View Projects
+      </a>
     </div>
   );
 };
 
 export default Home;
+
+
