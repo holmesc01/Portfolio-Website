@@ -1,8 +1,8 @@
 /* Apply Baskerville font to the entire site */
 body {
     font-family: 'Baskerville', serif;
-    background-color: #31473A; /* Background color */
-    color: #EDF4F2; /* Text color */
+    background-color: #1e2125; /* Background color */
+    color: white; /* Text color */
 }
 
 /* Adjust size of the hamburger icon */
@@ -30,19 +30,19 @@ body {
 
 /* Additional custom styles */
 .container, .navbar {
-    color: #EDF4F2; /* Text color */
+    color: white; /* Text color */
 }
 
 .navbar {
-    background-color: #31473A; /* Navbar background color */
+    background-color: #1e2125; /* Navbar background color */
 }
 
 .nav-link {
-    color: #EDF4F2 !important; /* Navbar link color */
+    color: white !important; /* Navbar link color */
 }
 
 .navbar-brand {
-    color: #EDF4F2 !important; /* Navbar brand color */
+    color: white !important; /* Navbar brand color */
 }
 
 /* Custom logo styling */

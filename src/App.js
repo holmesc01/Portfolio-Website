@@ -37,7 +37,7 @@ function App() {
                 <Link className="nav-link" to="/" style={{ marginLeft: '20px' }}>Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/projects" style={{ marginLeft: '20px' }}>Projects</Link>
+                <Link className="nav-link" to="/projects" style={{ marginLeft: '20px' }}>Portfolio</Link>
               </li>
               <li className="nav-item"> 
                 <Link className="nav-link" to="/contact" style={{ marginLeft: '20px' }}>Contact</Link>
